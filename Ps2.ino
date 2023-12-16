@@ -98,7 +98,7 @@ namespace main {
           couter_red++;
           while (red) {
             main ::Ps2 ::Read_Ps2();
-            if (couter_red % 2 == 0) {
+            if (couter_red & 0) {
               main ::Relay ::Control_Relay(Relay_2, 0x00);
             } else {
               main ::Relay ::Control_Relay(Relay_2, 0x01);
@@ -114,7 +114,7 @@ namespace main {
           couter_blue++;
           while (blue) {
             main ::Ps2 ::Read_Ps2();
-            if (couter_blue % 2 == 0) {
+            if (couter_blue & 0) {
               main ::Relay ::Control_Relay(Relay_3, 0x00);
             } else {
               main ::Relay ::Control_Relay(Relay_3, 0x01);
@@ -130,7 +130,7 @@ namespace main {
           couter_pink++;
           while (pink) {
             main ::Ps2 ::Read_Ps2();
-            if (couter_pink % 2 == 0) {
+            if (couter_pink  & 0) {
               main ::Relay ::Control_Relay(Relay_4, 0x00);
             } else {
               main ::Relay ::Control_Relay(Relay_4, 0x01);
@@ -146,7 +146,7 @@ namespace main {
           couter_l1_r1++;
           while (l1 and r1) {
             main ::Ps2 ::Read_Ps2();
-            if (couter_l1_r1 % 2 == 0) {
+            if (couter_l1_r1 & 0) {
               main ::Relay ::Control_Relay(Relay_1, 0x00);
             } else {
               main ::Relay ::Control_Relay(Relay_1, 0x01);
